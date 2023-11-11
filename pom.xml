@@ -11,23 +11,20 @@
    	 	<maven.compiler.target>11</maven.compiler.target>
  	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.7.1</version>
+	 <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>maven_project123</name>
+        <url>http://35.178.109.0:8081/artifactory/maven_project123/</url>
+    </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>maven_project123</name>
+        <url>http://35.178.109.0:8081/artifactory/maven_project123/</url>
+    </snapshotRepository>
+</distributionManagement>
 
-		</dependency>
-
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.12.1</version>
-		</dependency>
-
-	</dependencies>
-
-	<build>
+			<build>
 		<plugins>
 
 			<plugin>
